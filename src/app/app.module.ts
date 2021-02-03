@@ -15,8 +15,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
-import { GeneratetokenComponent } from './generatetoken/generatetoken.component';
-import { ValidationComponent } from './validation/validation.component';
+import {EmployeeAgePipe} from './employee-detail/employeeAge.pipe';
 
 @NgModule({
   declarations: [
@@ -24,8 +23,7 @@ import { ValidationComponent } from './validation/validation.component';
     LoginComponent,
     EmployeesComponent,
     EmployeeDetailComponent,
-    GeneratetokenComponent,
-    ValidationComponent,
+    EmployeeAgePipe,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +37,8 @@ import { ValidationComponent } from './validation/validation.component';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

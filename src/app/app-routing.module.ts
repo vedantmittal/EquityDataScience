@@ -19,15 +19,12 @@ const routes: Routes = [
   },
   {
     path: 'employees',
-    component: EmployeesComponent,
-    children:[
-      {
-        path: 'employees/:type',
-        component: EmployeeDetailComponent
-      }
-    ]
+    component: EmployeesComponent
   },
-  
+  {
+    path: 'employees/:id',
+    component: EmployeeDetailComponent
+  }
 ];
 
 @NgModule({

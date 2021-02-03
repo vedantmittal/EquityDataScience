@@ -1,0 +1,40 @@
+mat-card {
+  max-width: 800px;
+  margin: 2em auto;
+  text-align: center;
+  max-height: 600px;
+  padding: 0px;
+  height: 450px;
+}
+
+h1:hover{
+  background-color: black ;
+}
+
+.name {
+  max-width: 800px;
+  height: 120px;
+  background-color: #2883c1 ;
+  color: white;
+  text-align: center;
+  padding-top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+th{
+  font-family: Fantasy;
+  font-weight: 900;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 80px;
+  font-size: 30px;
+}
+
+td{
+  font-size: 15px;
+  font-weight: 200;
+}
+
+
+

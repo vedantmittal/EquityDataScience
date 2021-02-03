@@ -1,4 +1,6 @@
-<u><h2 style="text-align: center;">Employees Details</h2></u>
+<div *ngIf ="tokens else elseblock" >
+<h1 *ngIf="errors">Please reload page api is too busy</h1>
+<h1 style="text-align: center;">EMPLOYEES</h1>
 <table border="1" class="employee">
 <tr>
   <th>ID</th>
@@ -11,6 +13,10 @@
   <td>{{item.employee_name}}</td>
   <td>{{item.employee_age}}</td>
 
-  <td><a  (click)="getemployee(item.id)"> More Details</a></td>
+  <td><a routerLink="/employees/{{item.id}}"> More Details</a></td>
 </tr>
 </table>
+</div>
+<ng-template #elseblock>
+  <app-root></app-root>
+</ng-template>

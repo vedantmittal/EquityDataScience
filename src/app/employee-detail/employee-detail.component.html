@@ -1,1 +1,17 @@
-<p>employee-detail works!</p>
+<mat-card>
+    <h1 class="name" appTextColor>{{data['data'].employee_name}}</h1>
+    <table>
+        <tr>
+            <th>{{data.data.id}}</th>
+            <th>{{data['data'].employee_age | employeeAge }}</th>
+            <th>{{data['data'].employee_salary | currency:'USD'}}</th>
+        </tr>
+        <tr>
+            <td>Id</td>
+            <td>Age</td>
+            <td>Salary</td>
+        </tr>
+    </table>
+</mat-card>
+
+
